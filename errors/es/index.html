@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentación de códigos de error de ManoMatika</title>
+</head>
+<body>
+<h1>Documentación de códigos de error de ManoMatika</h1>
+<p>Documentación pública de cada código de error del registro combinado de códigos de error del ecosistema ManoMatika. Cada código tiene una URL estable — <code>https://manomatika.github.io/error-docs/errors/&lt;CODE&gt;</code> — derivada únicamente del código; véase <code>error/docs_url.py</code>.</p>
+<p><a href="../">English</a></p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Componente</th>
+<th>Gravedad</th>
+<th>Mensaje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AHIMSA-APP-001">AHIMSA-APP-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>application required field missing</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-APP-002">AHIMSA-APP-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>application.product_name is not a valid product name</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-APP-003">AHIMSA-APP-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>application.bundle_id is not a valid reverse-DNS identifier</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-APP-004">AHIMSA-APP-004</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>application.version is not a valid X.Y.Z version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-CLI-001">AHIMSA-CLI-001</a></td>
+<td>AHIMSA</td>
+<td>fatal</td>
+<td>--config path not found</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-CLI-002">AHIMSA-CLI-002</a></td>
+<td>AHIMSA</td>
+<td>fatal</td>
+<td>--config file is not valid JSON</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-MATIKA-001">AHIMSA-MATIKA-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>matika required field missing</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-MATIKA-002">AHIMSA-MATIKA-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>matika.version is not a valid X.Y.Z version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-PLUG-001">AHIMSA-PLUG-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug required field missing</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-PLUG-002">AHIMSA-PLUG-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug matika_version does not match recipe matika.version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-PLUG-003">AHIMSA-PLUG-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug version field is not a valid X.Y.Z version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-001">AHIMSA-RECIPE-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>recipe.json file not found</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-002">AHIMSA-RECIPE-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>recipe.json is not valid JSON</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-003">AHIMSA-RECIPE-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applugs field is missing or an empty array</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-004">AHIMSA-RECIPE-004</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applugs declare conflicting matika_version values</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-001">AHIMSA-RELEASE-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>no resolver registered for release-audit host</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-002">AHIMSA-RELEASE-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>release-audit host resolver selection denied or unavailable</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-003">AHIMSA-RELEASE-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>could not fetch RELEASES.md</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-004">AHIMSA-RELEASE-004</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>duplicate RELEASES.md entry for tag</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-005">AHIMSA-RELEASE-005</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>could not list git tags for repo</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-006">AHIMSA-RELEASE-006</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>tag exists but has no RELEASES.md entry</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-007">AHIMSA-RELEASE-007</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>RELEASES.md entry exists but the tag does not</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-001">AHIMSA-RESOLVE-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>no resolver registered for applug repo host</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-002">AHIMSA-RESOLVE-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug repo host resolver selection denied or unavailable</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-003">AHIMSA-RESOLVE-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug manifest resolution returned malformed data</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-004">AHIMSA-RESOLVE-004</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug manifest resolution denied or unsupported</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-005">AHIMSA-RESOLVE-005</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug.json not found at the pinned tag</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-006">AHIMSA-RESOLVE-006</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>unexpected applug manifest resolution failure</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-007">AHIMSA-RESOLVE-007</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>resolved applug id does not match the recipe name</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-008">AHIMSA-RESOLVE-008</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>resolved applug version does not match the recipe version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-009">AHIMSA-RESOLVE-009</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>resolved applug matika_version does not match the recipe matika_version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RESOLVE-010">AHIMSA-RESOLVE-010</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug declares a supported locale that matika does not support</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-001">EYERATE-API-001</a></td>
+<td>EYERATE</td>
+<td>error</td>
+<td>La búsqueda de valores falló porque la llamada al proveedor no se completó</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-002">EYERATE-API-002</a></td>
+<td>EYERATE</td>
+<td>error</td>
+<td>La consulta del valor falló porque la llamada al proveedor no se completó</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-003">EYERATE-API-003</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>No se encontró el valor financiero</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-004">EYERATE-API-004</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>El valor financiero ya existe</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-005">EYERATE-API-005</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>La prueba de conectividad del proveedor falló</td>
+</tr>
+<tr>
+<td><a href="EYERATE-PROV-001">EYERATE-PROV-001</a></td>
+<td>EYERATE</td>
+<td>error</td>
+<td>El proveedor requiere una clave de API que no está configurada</td>
+</tr>
+<tr>
+<td><a href="EYERATE-PROV-002">EYERATE-PROV-002</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>La solicitud al proveedor fue limitada por frecuencia</td>
+</tr>
+<tr>
+<td><a href="EYERATE-PROV-003">EYERATE-PROV-003</a></td>
+<td>EYERATE</td>
+<td>error</td>
+<td>El proveedor devolvió un error HTTP</td>
+</tr>
+<tr>
+<td><a href="EYERATE-PROV-004">EYERATE-PROV-004</a></td>
+<td>EYERATE</td>
+<td>error</td>
+<td>La llamada al proveedor falló inesperadamente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-001">MATIKA-AUTH-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Solicitud rechazada: el usuario no está autenticado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-002">MATIKA-AUTH-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Solicitud rechazada: el usuario autenticado no está autorizado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-003">MATIKA-AUTH-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>La sesión superó el tiempo de vida máximo absoluto; la sesión fue cerrada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-004">MATIKA-AUTH-004</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>La sesión superó el tiempo de inactividad configurado; la sesión fue cerrada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-005">MATIKA-AUTH-005</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión fallido: correo electrónico/usuario o contraseña inválidos</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-006">MATIKA-AUTH-006</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La variable de entorno SECRET_KEY no está definida; la aplicación no puede iniciar</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-007">MATIKA-AUTH-007</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Registro fallido: la dirección de correo electrónico ya está registrada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-008">MATIKA-AUTH-008</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Registro fallido: el nombre de usuario ya está en uso</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-009">MATIKA-AUTH-009</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Cambio de contraseña fallido: la contraseña actual es incorrecta</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-001">MATIKA-CFG-001</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se pudo crear el directorio MATIKA_HOME o no tiene permisos de escritura</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-002">MATIKA-CFG-002</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El valor de la variable de entorno MATIKA_PORT no es un entero válido; se usará el puerto predeterminado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-003">MATIKA-CFG-003</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se encontraron catálogos de idioma principales; matika no puede iniciar sin al menos un idioma incluido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-004">MATIKA-CFG-004</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El AppLug declara un idioma admitido para el que matika no incluye un catálogo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-005">MATIKA-CFG-005</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El archivo .env contiene una línea que no se pudo interpretar; la entrada fue omitida</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-006">MATIKA-CFG-006</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El applug.json del AppLug carece del campo obligatorio 'supported_locales', o está vacío</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-007">MATIKA-CFG-007</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>MATIKA_DEPLOYMENT_MODE no está definida o no es un modo de despliegue admitido (se esperaba 'desktop' o 'hosted')</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-008">MATIKA-CFG-008</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se pudo generar ni conservar la identidad de instalación en tiempo de ejecución (.install_id) en MATIKA_HOME</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-009">MATIKA-CFG-009</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se pudo generar ni conservar el token de control en tiempo de ejecución (.control_token) en MATIKA_HOME</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CSRF-001">MATIKA-CSRF-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Validación CSRF fallida: falta el token de sesión o el token enviado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CSRF-002">MATIKA-CSRF-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Validación CSRF fallida: el token enviado no coincide con el token de sesión</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CSRF-003">MATIKA-CSRF-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>La validación CSRF fue omitida porque se detectó un entorno de pruebas</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-001">MATIKA-LNCH-001</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Excepción fatal no capturada durante el inicio de la aplicación</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-002">MATIKA-LNCH-002</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Falló la inicialización del registro (logging) antes de poder configurar el registro de inicio</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-003">MATIKA-LNCH-003</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>El puerto configurado está en uso por un proceso desconocido o no identificable; se rehúsa a reclamarlo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-004">MATIKA-LNCH-004</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>El puerto configurado sigue en uso después de un intento de reclamo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-005">MATIKA-LNCH-005</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Falló la inicialización de primer arranque</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-006">MATIKA-LNCH-006</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Falló la creación del esquema de base de datos o el sellado de Alembic a la versión más reciente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-007">MATIKA-LNCH-007</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Falló la instalación o actualización de un complemento incluido; se continúa el arranque con código de complemento obsoleto o faltante</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-008">MATIKA-LNCH-008</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El servidor no reportó estar operativo dentro del tiempo límite de inicio; no se abrió la pestaña del navegador</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-009">MATIKA-LNCH-009</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>No se pudo eliminar un archivo de código obsoleto de un complemento durante su actualización</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-010">MATIKA-LNCH-010</a></td>
+<td>MATIKA</td>
+<td>info</td>
+<td>El servidor en ejecución está listo; se completó el traspaso del registro de arranque a ejecución y el sumidero de registro agregado de ejecución está abierto</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-011">MATIKA-LNCH-011</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se creó el sumidero de registro agregado de ejecución después del traspaso de arranque a ejecución</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-012">MATIKA-LNCH-012</a></td>
+<td>MATIKA</td>
+<td>info</td>
+<td>Se descubrió una instancia de ManoMatika en ejecución durante el inicio; se registró su identidad antes de decidir entre ceder el paso o reemplazarla</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-013">MATIKA-LNCH-013</a></td>
+<td>MATIKA</td>
+<td>info</td>
+<td>Reemplazando una instancia en ejecución que difiere; se solicitó un apagado ordenado a través del extremo de control antes de cualquier acción forzada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-014">MATIKA-LNCH-014</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El apagado ordenado del reemplazo no liberó el puerto; se escala a una terminación forzada del proceso ManoMatika verificado positivamente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-015">MATIKA-LNCH-015</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Se rehúsa a terminar por la fuerza un proceso que retiene el puerto y que no se verifica positivamente como un proceso de ManoMatika durante el reemplazo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-017">MATIKA-LNCH-017</a></td>
+<td>MATIKA</td>
+<td>info</td>
+<td>El vigilante de tiempo de inactividad de escritorio solicitó el apagado del servidor tras agotarse el respaldo sin actividad de solicitudes</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-018">MATIKA-LNCH-018</a></td>
+<td>MATIKA</td>
+<td>info</td>
+<td>Se cedió el paso a una instancia ya en ejecución de ESTA misma instalación; se abrió una pestaña del navegador contra ella en lugar de iniciar un segundo servidor</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-019">MATIKA-LNCH-019</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>webbrowser.open no pudo abrir una pestaña del navegador contra la instancia ya en ejecución durante una cesión de paso de la misma instalación; ManoMatika está en ejecución y accesible en la URL indicada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-001">MATIKA-MENU-001</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Se omitió el archivo de menús porque su schema_version no es compatible</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-002">MATIKA-MENU-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Falló la interpretación del archivo de menús (error de E/S o de decodificación JSON)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-003">MATIKA-MENU-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>A una entrada de rol del archivo de menús le falta el campo obligatorio 'role'; la entrada fue omitida</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-004">MATIKA-MENU-004</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>La label_key de un elemento de menú no tiene entrada en el catálogo para el idioma activo; se mostró la clave sin traducir</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-001">MATIKA-PLUG-001</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Al applug.json del complemento le falta el campo obligatorio 'matika_version'</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-002">MATIKA-PLUG-002</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La versión base declarada en matika_version del complemento no coincide con la versión base de Matika en ejecución</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-003">MATIKA-PLUG-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>La versión de Matika en ejecución es una pre-lanzamiento; el complemento se cargó únicamente por coincidencia de versión base</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-004">MATIKA-PLUG-004</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Al manifiesto del complemento le falta el campo obligatorio 'entry_point'; el complemento fue omitido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-005">MATIKA-PLUG-005</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El complemento no se pudo cargar (error de importación o de instanciación); el complemento fue omitido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-006">MATIKA-PLUG-006</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El registro de rutas del complemento falló después de que el complemento se cargara correctamente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RBAC-001">MATIKA-RBAC-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Acceso denegado: el usuario no tiene permiso para la página solicitada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RBAC-002">MATIKA-RBAC-002</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El complemento declara permisos pero no incluye un archivo de menú; sus páginas son inaccesibles desde cualquier menú</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RBAC-003">MATIKA-RBAC-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El aprovisionamiento automático de permisos del complemento hizo referencia a un nivel de permiso desconocido o no reconocido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RBAC-004">MATIKA-RBAC-004</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El aprovisionamiento automático de permisos del complemento hizo referencia a un tipo de página desconocido; se usó Maintenance de forma predeterminada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-001">MATIKA-RTR-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El archivo subido supera el tamaño máximo permitido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-002">MATIKA-RTR-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El archivo subido tiene un tipo inválido o no reconocido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-003">MATIKA-RTR-003</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Falló la importación de datos (error de análisis o de validación)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-004">MATIKA-RTR-004</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>No se encontró el recurso solicitado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-005">MATIKA-RTR-005</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Operación rechazada por una regla de negocio</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-006">MATIKA-RTR-006</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Acceso denegado: el recurso solicitado no pertenece al usuario que realiza la solicitud</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-001">MATIKA-SCRN-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Se encontró un screen_id duplicado en dos o más fuentes de pantallas</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-002">MATIKA-SCRN-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>A la entrada de pantalla de tipo 'not_a_screen' le falta el campo obligatorio 'reason'</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-003">MATIKA-SCRN-003</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>A la entrada de pantalla de tipo 'screen' le falta el campo obligatorio 'markers'</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-004">MATIKA-SCRN-004</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El campo 'required_markers' de la entrada de pantalla no es una lista</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-005">MATIKA-SCRN-005</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El campo 'required_markers' de la entrada de pantalla hace referencia a un selector ausente en 'markers'</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-006">MATIKA-SCRN-006</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El campo 'steps' de la entrada de pantalla no es una lista</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-007">MATIKA-SCRN-007</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Un paso de la entrada de pantalla usa un verbo desconocido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-008">MATIKA-SCRN-008</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La entrada de pantalla tiene un 'type' desconocido (se esperaba 'screen' o 'not_a_screen')</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SCRN-009">MATIKA-SCRN-009</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Se omitió el archivo de pantallas porque su schema_version no es compatible o no se pudo interpretar como JSON</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-001">MATIKA-TLS-001</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se pudo aprovisionar el material TLS</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-002">MATIKA-TLS-002</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La configuración de certificado/clave TLS aportada por el operador no es válida</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-003">MATIKA-TLS-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Falló la confianza del llavero de macOS para la CA de esta instalación</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-004">MATIKA-TLS-004</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El listener de redirección HTTP a HTTPS no pudo enlazarse</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
