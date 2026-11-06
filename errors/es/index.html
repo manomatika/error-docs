@@ -110,6 +110,30 @@
 <td>applugs declare conflicting matika_version values</td>
 </tr>
 <tr>
+<td><a href="AHIMSA-RECIPE-005">AHIMSA-RECIPE-005</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>an applug hard-requires a capability no recipe sysplug provides</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-006">AHIMSA-RECIPE-006</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>two recipe sysplugs provide the same capability (ambiguous)</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-007">AHIMSA-RECIPE-007</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>a sysplug hard-requires a capability no recipe sysplug provides</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RECIPE-008">AHIMSA-RECIPE-008</a></td>
+<td>AHIMSA</td>
+<td>warning</td>
+<td>a recipe sysplug provides a capability no applug or sysplug requires</td>
+</tr>
+<tr>
 <td><a href="AHIMSA-RELEASE-001">AHIMSA-RELEASE-001</a></td>
 <td>AHIMSA</td>
 <td>error</td>
@@ -150,6 +174,12 @@
 <td>AHIMSA</td>
 <td>error</td>
 <td>RELEASES.md entry exists but the tag does not</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-RELEASE-008">AHIMSA-RELEASE-008</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>could not fetch release-log.yaml</td>
 </tr>
 <tr>
 <td><a href="AHIMSA-RESOLVE-001">AHIMSA-RESOLVE-001</a></td>
@@ -212,6 +242,78 @@
 <td>applug declares a supported locale that matika does not support</td>
 </tr>
 <tr>
+<td><a href="AHIMSA-RESOLVE-011">AHIMSA-RESOLVE-011</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>applug omits repo and no usable ahimsa-registry entry was found</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-001">AHIMSA-SHCT-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>shortcuts declaration file failed to parse</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-002">AHIMSA-SHCT-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>shortcuts declaration file has missing or unsupported schema_version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-003">AHIMSA-SHCT-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>shortcuts declaration file has missing or non-string origin</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-004">AHIMSA-SHCT-004</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>shortcut entry is missing a required field or has an invalid field shape</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-005">AHIMSA-SHCT-005</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>shortcut entry declares a browser/OS-reserved combo</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-006">AHIMSA-SHCT-006</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>duplicate shortcut id within a single declaration file</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-007">AHIMSA-SHCT-007</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>two shortcuts within the same declaration file bind the same combo in overlapping scope</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SHCT-008">AHIMSA-SHCT-008</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>two shortcuts from different declaration files bind the same combo in overlapping scope</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SYSPLUG-001">AHIMSA-SYSPLUG-001</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>sysplug required field missing</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SYSPLUG-002">AHIMSA-SYSPLUG-002</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>sysplug matika_version does not match recipe matika.version</td>
+</tr>
+<tr>
+<td><a href="AHIMSA-SYSPLUG-003">AHIMSA-SYSPLUG-003</a></td>
+<td>AHIMSA</td>
+<td>error</td>
+<td>sysplug version field is not a valid X.Y.Z version</td>
+</tr>
+<tr>
 <td><a href="EYERATE-API-001">EYERATE-API-001</a></td>
 <td>EYERATE</td>
 <td>error</td>
@@ -242,6 +344,66 @@
 <td>La prueba de conectividad del proveedor falló</td>
 </tr>
 <tr>
+<td><a href="EYERATE-API-006">EYERATE-API-006</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>La acción masiva fue rechazada porque no está declarada en los metadatos bulk_actions de la pantalla</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-007">EYERATE-API-007</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>No se encontró la cartera</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-008">EYERATE-API-008</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>No se encontró la posición de la cartera</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-009">EYERATE-API-009</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>No se encontró el lote</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-010">EYERATE-API-010</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>Ya existe una cartera con ese nombre</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-011">EYERATE-API-011</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>El valor financiero ya está en esta cartera</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-012">EYERATE-API-012</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>El valor financiero no se puede eliminar porque está en {holding_portfolio_count} cartera(s)</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-013">EYERATE-API-013</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>role_ids es obligatorio para scope=role</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-014">EYERATE-API-014</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>El usuario no tiene todos los roles solicitados</td>
+</tr>
+<tr>
+<td><a href="EYERATE-API-015">EYERATE-API-015</a></td>
+<td>EYERATE</td>
+<td>warning</td>
+<td>El ámbito de la cartera debe ser "user" o "role"</td>
+</tr>
+<tr>
 <td><a href="EYERATE-PROV-001">EYERATE-PROV-001</a></td>
 <td>EYERATE</td>
 <td>error</td>
@@ -264,6 +426,42 @@
 <td>EYERATE</td>
 <td>error</td>
 <td>La llamada al proveedor falló inesperadamente</td>
+</tr>
+<tr>
+<td><a href="MANOMATIKA-BOM-001">MANOMATIKA-BOM-001</a></td>
+<td>MANOMATIKA</td>
+<td>error</td>
+<td>BOM manifest's error_registry.sha256 does not match the current bytes of its committed snapshot file</td>
+</tr>
+<tr>
+<td><a href="MANOMATIKA-BOM-002">MANOMATIKA-BOM-002</a></td>
+<td>MANOMATIKA</td>
+<td>error</td>
+<td>BOM manifest declares an error_registry.snapshot pointer that does not resolve to an existing file</td>
+</tr>
+<tr>
+<td><a href="MANOMATIKA-RELEASELOG-001">MANOMATIKA-RELEASELOG-001</a></td>
+<td>MANOMATIKA</td>
+<td>error</td>
+<td>release-log.yaml entry has no error_registry.entry_count citation for a manifested release</td>
+</tr>
+<tr>
+<td><a href="MANOMATIKA-RELEASELOG-002">MANOMATIKA-RELEASELOG-002</a></td>
+<td>MANOMATIKA</td>
+<td>error</td>
+<td>release-log.yaml error_registry.entry_count does not match the BOM manifest's registry snapshot total_codes</td>
+</tr>
+<tr>
+<td><a href="MANOMATIKA-RELEASELOG-003">MANOMATIKA-RELEASELOG-003</a></td>
+<td>MANOMATIKA</td>
+<td>error</td>
+<td>BOM manifest has no (resolvable) error_registry snapshot to validate the release-log citation against</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUDIT-001">MATIKA-AUDIT-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Solicitud de lectura del registro de auditoría rechazada (parámetros de consulta inválidos)</td>
 </tr>
 <tr>
 <td><a href="MATIKA-AUTH-001">MATIKA-AUTH-001</a></td>
@@ -320,6 +518,222 @@
 <td>Cambio de contraseña fallido: la contraseña actual es incorrecta</td>
 </tr>
 <tr>
+<td><a href="MATIKA-AUTH-010">MATIKA-AUTH-010</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Contraseña rechazada: no cumple con la política mínima de seguridad</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-011">MATIKA-AUTH-011</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El backend de correo está mal configurado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-012">MATIKA-AUTH-012</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Verificación de correo fallida: token inválido, expirado o ya utilizado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-013">MATIKA-AUTH-013</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>No se pudo enviar el correo de verificación</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-014">MATIKA-AUTH-014</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión OIDC fallido: la validación del id_token falló (emisor, audiencia, firma o expiración)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-015">MATIKA-AUTH-015</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión OIDC fallido: la validación de state o nonce falló (posible CSRF)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-016">MATIKA-AUTH-016</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Inicio de sesión OIDC bloqueado: ya existe una cuenta para este correo electrónico; vincular requiere una sesión autenticada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-017">MATIKA-AUTH-017</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Vinculación OIDC rechazada: esta identidad ya está vinculada a otra cuenta</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-018">MATIKA-AUTH-018</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión OIDC rechazado: proveedor desconocido, deshabilitado o no configurado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-019">MATIKA-AUTH-019</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Restablecimiento de contraseña fallido: token inválido, expirado o ya utilizado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-020">MATIKA-AUTH-020</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>No se pudo enviar el correo de restablecimiento de contraseña</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-021">MATIKA-AUTH-021</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Sesión invalidada por una discrepancia en la generación de sesión (probablemente un restablecimiento de contraseña)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-022">MATIKA-AUTH-022</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Registro de clave de acceso rechazado: el desafío falta, expiró o ya fue utilizado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-023">MATIKA-AUTH-023</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Registro de clave de acceso fallido: la verificación de origen, RP ID o certificación de autenticidad falló</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-024">MATIKA-AUTH-024</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión con clave de acceso rechazado: el desafío falta o expiró</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-025">MATIKA-AUTH-025</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión con clave de acceso rechazado: credencial desconocida, o la verificación de origen/RP ID/firma falló</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-026">MATIKA-AUTH-026</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Inicio de sesión con clave de acceso rechazado: se detectó una regresión del contador de firmas (posible autenticador clonado)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-027">MATIKA-AUTH-027</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Recuperación de cuenta fallida: token inválido, expirado o ya utilizado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-028">MATIKA-AUTH-028</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>No se pudo enviar el correo de recuperación de cuenta</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-029">MATIKA-AUTH-029</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Configuración de tiempo de espera de sesión rechazada: valor fuera de límites o no numérico</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-030">MATIKA-AUTH-030</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Destino de redirección posterior al inicio de sesión inseguro rechazado; se usará la página de destino predeterminada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-031">MATIKA-AUTH-031</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Ceremonia de inscripción TOTP rechazada: limitada por frecuencia, o el secreto pendiente falta o expiró</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-032">MATIKA-AUTH-032</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El código de confirmación de inscripción TOTP no coincidió con el secreto pendiente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-033">MATIKA-AUTH-033</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Verificación en dos pasos TOTP rechazada: no hay una sesión pendiente con contraseña verificada, o expiró</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-034">MATIKA-AUTH-034</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Verificación en dos pasos TOTP rechazada: limitada por frecuencia, o ningún código enviado ni código de recuperación coincidió</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-035">MATIKA-AUTH-035</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Verificación en dos pasos TOTP rechazada: el código enviado corresponde a un paso de tiempo ya consumido (posible reproducción)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-036">MATIKA-AUTH-036</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Correo de verificación/restablecimiento enviado mediante un backend de correo que no entrega mensajes</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-037">MATIKA-AUTH-037</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Se requiere reautenticación reforzada para una acción sensible o de nivel administrativo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-038">MATIKA-AUTH-038</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Nombre de usuario rechazado - no cumple la regla de nombres de usuario</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-001">MATIKA-BRWS-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>browse_panel.default_search_field es obligatorio cuando browse_panel.search_fields está presente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-002">MATIKA-BRWS-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>browse_panel.default_search_field no nombra una entrada de browse_panel.search_fields</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-003">MATIKA-BRWS-003</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>browse_panel.default_saved_search.name no nombra una entrada de browse_panel.saved_searches</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-005">MATIKA-BRWS-005</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>browse_panel.default_search fue renombrado a default_saved_search</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-006">MATIKA-BRWS-006</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>split.browse_width está por debajo de split.min_browse en el ancho de referencia de 1280 px</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-007">MATIKA-BRWS-007</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>una entrada de browse_panel.saved_searches no tiene ninguna condición de búsqueda</td>
+</tr>
+<tr>
+<td><a href="MATIKA-BRWS-008">MATIKA-BRWS-008</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>browse_panel.default_saved_search.execute_on_load está retirado y se ignora</td>
+</tr>
+<tr>
 <td><a href="MATIKA-CFG-001">MATIKA-CFG-001</a></td>
 <td>MATIKA</td>
 <td>fatal</td>
@@ -372,6 +786,90 @@
 <td>MATIKA</td>
 <td>fatal</td>
 <td>No se pudo generar ni conservar el token de control en tiempo de ejecución (.control_token) en MATIKA_HOME</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-010">MATIKA-CFG-010</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La variable de entorno PROVIDER_SECRET_ENCRYPTION_KEY no está configurada o tiene un formato inválido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-011">MATIKA-CFG-011</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La versión de clave (key_version) de un secreto de proveedor almacenado no tiene una clave de cifrado configurada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-012">MATIKA-CFG-012</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>MATIKA_WEBAUTHN_RP_ID y MATIKA_WEBAUTHN_ORIGIN deben estar configuradas en modo de despliegue hospedado antes de que pueda ejecutarse cualquier ceremonia de clave de acceso</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-013">MATIKA-CFG-013</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La variable de entorno TOTP_SECRET_ENCRYPTION_KEY no está configurada o está mal formada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-014">MATIKA-CFG-014</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El key_version de un secreto TOTP almacenado no tiene una clave de cifrado correspondiente configurada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-015">MATIKA-CFG-015</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>MATIKA_ENV_BANNER_TEXT/_BG/_FG no está configurada, excede el tamaño permitido o no es un color hexadecimal de 6 dígitos válido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-016">MATIKA-CFG-016</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>MATIKA_BOOTSTRAP_ADMIN_USERNAME o _EMAIL no es válido o ya está en uso</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-017">MATIKA-CFG-017</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>MATIKA_BOOTSTRAP_ADMIN_PASSWORD_FILE no existe, no se puede leer, no es un archivo regular, no es UTF-8 o es legible por el grupo o por otros</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-018">MATIKA-CFG-018</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La contraseña del administrador inicial no cumple la política de contraseñas</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-019">MATIKA-CFG-019</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>No existe ningún usuario Admin pero el administrador inicial ya se creó antes; no se creó nada</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-020">MATIKA-CFG-020</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>No se pudo eliminar el archivo de contraseña del administrador inicial después de usarlo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-021">MATIKA-CFG-021</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>MATIKA_TRUSTED_PROXIES, MATIKA_PUBLIC_BASE_URL o MATIKA_SESSION_COOKIE_SECURE tiene un formato no válido</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-022">MATIKA-CFG-022</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>No se pudo escribir el archivo de contraseña generada del administrador inicial</td>
+</tr>
+<tr>
+<td><a href="MATIKA-CFG-023">MATIKA-CFG-023</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La base de datos de la instalación está por detrás del esquema actual; inicie la aplicación una vez antes de ejecutar create-admin</td>
 </tr>
 <tr>
 <td><a href="MATIKA-CSRF-001">MATIKA-CSRF-001</a></td>
@@ -500,6 +998,18 @@
 <td>webbrowser.open no pudo abrir una pestaña del navegador contra la instancia ya en ejecución durante una cesión de paso de la misma instalación; ManoMatika está en ejecución y accesible en la URL indicada</td>
 </tr>
 <tr>
+<td><a href="MATIKA-LNCH-020">MATIKA-LNCH-020</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La actualización de Alembic a la versión más reciente falló para una instalación existente; el esquema de la base de datos puede estar migrado parcialmente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-LNCH-021">MATIKA-LNCH-021</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La instalación o actualización del SysPlug incluido falló; se rechaza el inicio con código de SysPlug obsoleto o ausente</td>
+</tr>
+<tr>
 <td><a href="MATIKA-MENU-001">MATIKA-MENU-001</a></td>
 <td>MATIKA</td>
 <td>warning</td>
@@ -522,6 +1032,30 @@
 <td>MATIKA</td>
 <td>warning</td>
 <td>La label_key de un elemento de menú no tiene entrada en el catálogo para el idioma activo; se mostró la clave sin traducir</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-005">MATIKA-MENU-005</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>La misma ruta está registrada por más de un elemento de menú en los manifiestos cargados; solo se emite una advertencia de ruta duplicada, ambas entradas se siguen mostrando</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-006">MATIKA-MENU-006</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>El elemento de menú declaró un nombre de icono fuera del conjunto de iconos autorizado; el elemento se muestra sin icono en su lugar</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-007">MATIKA-MENU-007</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Al elemento de menú de esquema v2 le falta el campo obligatorio 'label_key' o 'route'; la entrada se omitió</td>
+</tr>
+<tr>
+<td><a href="MATIKA-MENU-008">MATIKA-MENU-008</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Un archivo de menú v1 anida un elemento Menu dentro de otro elemento Menu más allá del límite de dos niveles; las entradas más profundas se omitieron</td>
 </tr>
 <tr>
 <td><a href="MATIKA-PLUG-001">MATIKA-PLUG-001</a></td>
@@ -558,6 +1092,78 @@
 <td>MATIKA</td>
 <td>error</td>
 <td>El registro de rutas del complemento falló después de que el complemento se cargara correctamente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-007">MATIKA-PLUG-007</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La reconciliación del esquema del complemento encontró una columna faltante en una tabla ya existente que es NOT NULL y no tiene valor por defecto; un reconciliador aditivo no puede rellenarla, y se requiere una migración real</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-008">MATIKA-PLUG-008</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Se encontraron manifiestos de AppLug en el disco, pero ninguno se cargó correctamente; se rechaza el inicio con cero complementos</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-009">MATIKA-PLUG-009</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La lista de capacidades 'requires' u 'optional' del manifiesto del AppLug está presente pero no es una lista de nombres de capacidad no vacíos; se omitió el plugin</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-010">MATIKA-PLUG-010</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La reverificación de capacidades en el arranque encontró un AppLug cargado que requiere una capacidad que ningún SysPlug cargado provee; se rechaza el arranque</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-011">MATIKA-PLUG-011</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Al applug.json del AppLug le falta el campo obligatorio 'requires'; se omitió el plugin</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-012">MATIKA-PLUG-012</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El AppLug declara una categoría de exportación/importación de datos de usuario pero no implementa ningún gancho export_user_data/import_user_data; se omitió la categoría</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-013">MATIKA-PLUG-013</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Un AppLug rechazó la eliminación de un usuario desde su gancho on_user_delete; se revirtió la eliminación (409)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-014">MATIKA-PLUG-014</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El gancho on_user_delete de un AppLug produjo una excepción inesperada; se revirtió la eliminación (500)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-015">MATIKA-PLUG-015</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La declaración settings_ui de un AppLug no es válida, o uno de sus ids de campo colisiona con un ajuste del núcleo o con el de otro AppLug; el AppLug no se carga</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-016">MATIKA-PLUG-016</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>La declaración external_origins de un AppLug incumple una regla de validación (V1-V12); el AppLug no se carga</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-017">MATIKA-PLUG-017</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El applug.json de un AppLug está mal formado (no es un objeto JSON, o su 'id' falta, está en blanco o no es texto, o su 'entry_point' no tiene la forma 'módulo.Clase'); el AppLug no se carga</td>
+</tr>
+<tr>
+<td><a href="MATIKA-PLUG-018">MATIKA-PLUG-018</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Un AppLug registra un id que ya pertenece a otro AppLug, o una ruta (método y ruta) que ya sirve el anfitrión u otro AppLug; el AppLug no se carga</td>
 </tr>
 <tr>
 <td><a href="MATIKA-RBAC-001">MATIKA-RBAC-001</a></td>
@@ -620,6 +1226,36 @@
 <td>Acceso denegado: el recurso solicitado no pertenece al usuario que realiza la solicitud</td>
 </tr>
 <tr>
+<td><a href="MATIKA-RTR-007">MATIKA-RTR-007</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Configuración del proveedor OIDC rechazada (error de validación)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-008">MATIKA-RTR-008</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Cambio de emisor del proveedor OIDC rechazado mientras existan identidades vinculadas</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-009">MATIKA-RTR-009</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El método de la solicitud no está permitido para esta página</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-010">MATIKA-RTR-010</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>No se pudo completar la solicitud</td>
+</tr>
+<tr>
+<td><a href="MATIKA-RTR-011">MATIKA-RTR-011</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El servidor no pudo completar la solicitud</td>
+</tr>
+<tr>
 <td><a href="MATIKA-SCRN-001">MATIKA-SCRN-001</a></td>
 <td>MATIKA</td>
 <td>error</td>
@@ -674,6 +1310,108 @@
 <td>Se omitió el archivo de pantallas porque su schema_version no es compatible o no se pudo interpretar como JSON</td>
 </tr>
 <tr>
+<td><a href="MATIKA-SHCT-001">MATIKA-SHCT-001</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El archivo de declaración de atajos no pudo analizarse (error de E/S o de decodificación JSON)</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-002">MATIKA-SHCT-002</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El archivo de declaración de atajos tiene un schema_version faltante o no soportado</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-003">MATIKA-SHCT-003</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El campo 'origin' del archivo de declaración de atajos falta o no coincide con su fuente declarante</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-004">MATIKA-SHCT-004</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Una entrada de declaración de atajo carece de un campo obligatorio o tiene una forma de campo inválida</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-005">MATIKA-SHCT-005</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>El atajo declara una combinación de teclas que colisiona con un atajo reservado conocido del navegador o del sistema operativo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-006">MATIKA-SHCT-006</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Id de atajo duplicado dentro de un único archivo de declaración</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-007">MATIKA-SHCT-007</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Dos atajos dentro del mismo archivo de declaración resuelven a la misma combinación de teclas en un alcance superpuesto</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SHCT-008">MATIKA-SHCT-008</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Dos atajos de orígenes distintos resuelven a la misma combinación de teclas en un alcance superpuesto</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-001">MATIKA-SYSP-001</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Al sysplug.json del SysPlug le falta el campo requerido 'matika_version'</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-002">MATIKA-SYSP-002</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>El núcleo de matika_version declarado por el SysPlug no coincide con el núcleo de la versión de Matika en ejecución</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-003">MATIKA-SYSP-003</a></td>
+<td>MATIKA</td>
+<td>warning</td>
+<td>Matika en ejecución es una prerelease; el SysPlug se cargó únicamente por coincidencia del núcleo de versión</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-004">MATIKA-SYSP-004</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Al manifiesto del SysPlug le falta el campo requerido 'provides', o no es una lista no vacía de nombres de capacidad</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-005">MATIKA-SYSP-005</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Al manifiesto del SysPlug le falta el campo requerido 'entry_point'</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-006">MATIKA-SYSP-006</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>El SysPlug no pudo cargarse (error de importación o instanciación); se rechaza el arranque con un SysPlug roto</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-007">MATIKA-SYSP-007</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Dos SysPlugs declaran la misma capacidad 'provides'; proveedor de capacidad ambiguo</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-008">MATIKA-SYSP-008</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La lista de capacidades 'requires' del manifiesto de SysPlug está presente pero no es una lista de cadenas de nombres de capacidad no vacías</td>
+</tr>
+<tr>
+<td><a href="MATIKA-SYSP-009">MATIKA-SYSP-009</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La reverificación de capacidades en el arranque encontró un SysPlug cargado que requiere una capacidad que ningún SysPlug cargado provee; se rechaza el arranque</td>
+</tr>
+<tr>
 <td><a href="MATIKA-TLS-001">MATIKA-TLS-001</a></td>
 <td>MATIKA</td>
 <td>fatal</td>
@@ -696,6 +1434,12 @@
 <td>MATIKA</td>
 <td>warning</td>
 <td>El listener de redirección HTTP a HTTPS no pudo enlazarse</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-005">MATIKA-TLS-005</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>MATIKA_TLS_EXTRA_SAN contiene una entrada de nombre de host/IP no válida</td>
 </tr>
 </tbody>
 </table>
