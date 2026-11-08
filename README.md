@@ -1,7 +1,7 @@
 # manomatika/error-docs
 
 Public, hosted documentation for every error code in the **ManoMatika**
-ecosystem (matika + eyerate + ahimsa + manomatika). Live at:
+ecosystem (matika + eyerate + metta + ahimsa + manomatika). Live at:
 
 **https://manomatika.github.io/error-docs**
 
