@@ -8,7 +8,7 @@
 <body>
 <h1>ManoMatika error-code documentation</h1>
 <p>Public documentation for every error code in the ManoMatika ecosystem's merged error-code registry. Each code has a stable URL — <code>https://manomatika.github.io/error-docs/errors/&lt;CODE&gt;</code> — derived from the code alone; see <code>error/docs_url.py</code>.</p>
-<p><strong>ManoMatika version:</strong> 0.0.10</p>
+<p><strong>ManoMatika version:</strong> 0.0.11</p>
 <p><a href="es/">Español</a></p>
 <table>
 <thead>
@@ -691,6 +691,12 @@
 <td>MATIKA</td>
 <td>error</td>
 <td>Username rejected - does not meet the username rule</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-039">MATIKA-AUTH-039</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>OIDC login start failed: the identity provider is unreachable or its discovery document is unusable</td>
 </tr>
 <tr>
 <td><a href="MATIKA-BRWS-001">MATIKA-BRWS-001</a></td>
@@ -1441,6 +1447,36 @@
 <td>MATIKA</td>
 <td>fatal</td>
 <td>MATIKA_TLS_EXTRA_SAN contains an invalid hostname/IP entry</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-006">MATIKA-TLS-006</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Proxy TLS termination is only supported in hosted mode</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-007">MATIKA-TLS-007</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Proxy TLS termination requires MATIKA_TRUSTED_PROXIES and MATIKA_PUBLIC_BASE_URL</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-008">MATIKA-TLS-008</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Proxy TLS termination trust settings are unsafe</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-009">MATIKA-TLS-009</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>Plain HTTP may bind only to loopback or an explicitly configured address</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-010">MATIKA-TLS-010</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>TLS certificate configuration conflicts with proxy TLS termination</td>
 </tr>
 </tbody>
 </table>

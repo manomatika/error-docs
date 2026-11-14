@@ -8,7 +8,7 @@
 <body>
 <h1>Documentación de códigos de error de ManoMatika</h1>
 <p>Documentación pública de cada código de error del registro combinado de códigos de error del ecosistema ManoMatika. Cada código tiene una URL estable — <code>https://manomatika.github.io/error-docs/errors/&lt;CODE&gt;</code> — derivada únicamente del código; véase <code>error/docs_url.py</code>.</p>
-<p><strong>Versión de ManoMatika:</strong> 0.0.10</p>
+<p><strong>Versión de ManoMatika:</strong> 0.0.11</p>
 <p><a href="../">English</a></p>
 <table>
 <thead>
@@ -691,6 +691,12 @@
 <td>MATIKA</td>
 <td>error</td>
 <td>Nombre de usuario rechazado - no cumple la regla de nombres de usuario</td>
+</tr>
+<tr>
+<td><a href="MATIKA-AUTH-039">MATIKA-AUTH-039</a></td>
+<td>MATIKA</td>
+<td>error</td>
+<td>Falló el inicio de sesión OIDC: el proveedor de identidad no es accesible o su documento de descubrimiento no es utilizable</td>
 </tr>
 <tr>
 <td><a href="MATIKA-BRWS-001">MATIKA-BRWS-001</a></td>
@@ -1441,6 +1447,36 @@
 <td>MATIKA</td>
 <td>fatal</td>
 <td>MATIKA_TLS_EXTRA_SAN contiene una entrada de nombre de host/IP no válida</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-006">MATIKA-TLS-006</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La terminación TLS en el proxy solo se admite en modo hosted</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-007">MATIKA-TLS-007</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La terminación TLS en el proxy requiere MATIKA_TRUSTED_PROXIES y MATIKA_PUBLIC_BASE_URL</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-008">MATIKA-TLS-008</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La configuración de confianza para la terminación TLS en el proxy no es segura</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-009">MATIKA-TLS-009</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>HTTP sin cifrar solo puede enlazarse a loopback o a una dirección configurada explícitamente</td>
+</tr>
+<tr>
+<td><a href="MATIKA-TLS-010">MATIKA-TLS-010</a></td>
+<td>MATIKA</td>
+<td>fatal</td>
+<td>La configuración del certificado TLS entra en conflicto con la terminación TLS en el proxy</td>
 </tr>
 </tbody>
 </table>
